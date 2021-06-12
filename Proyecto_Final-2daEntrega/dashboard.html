@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Proyecto</title>
+
+    <!-- Bootstrap -->
+    <link href="../plantilla2/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../plantilla2/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../plantilla2/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- bootstrap-progressbar -->
+    <link href="../plantilla2/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="../plantilla2/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!-- Datatables -->
+   <link href="../plantilla2/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+   <link href="../plantilla2/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+   <link href="../plantilla2/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+  <link href="../plantilla2/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+  <link href="../plantilla2/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="../plantilla2/build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+    
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Electivas</span>
+                <h2>Admin</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+              <!-- sidebar menu -->
+              <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                <div class="menu_section">
+                  <h3>General</h3>
+                  <ul class="nav side-menu">
+                    <li><a  href="dashboard.html" class="nav-link"> <i class="fa fa-home"></i> Inicio </a>
+                    </li>
+                    <li><a  href="desglose-creditos.html" class="nav-link"><i class="fa fa-edit"></i> Desglose de créditos </a>
+                    </li>
+                    <li><a href="alta-constancias.html" class="nav-link"><i class="fa fa-desktop"></i> Alta de constancia </a>
+                    </li>
+                    <li><a  href="login.html" class="nav-link"><i class="fa fa-windows"></i> Salir </a>
+                    </li>
+                  </ul>
+                </div>
+  
+              </div>
+              <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+            <div class="nav_menu">
+                <div class="nav toggle">
+                  <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                </div>
+                <nav class="nav navbar-nav">
+                <ul class=" navbar-right">
+                  <li class="nav-item dropdown open" style="padding-left: 15px;">
+                    <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                      <img src="images/img.jpg" alt="">Admin
+                    </a>
+                    <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item"  href="javascript:;"> Profile</a>
+                        <a class="dropdown-item"  href="javascript:;">
+                          <span class="badge bg-red pull-right">50%</span>
+                          <span>Settings</span>
+                        </a>
+                    <a class="dropdown-item"  href="javascript:;">Help</a>
+                      <a class="dropdown-item"  href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                    </div>
+                  </li>
+  
+                  
+                </ul>
+              </nav>
+            </div>
+          </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main"> 
+          <table>
+            <h4>Liberación de Electivas</h4>
+            <div class="row">
+              <div class="col-md-12 col-sm-12 ">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Alta de constancias</h2>
+                    <div class="clearfix"></div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                      <div class="row">
+                          <div class="col-sm-12">
+                            <div class="card-box table-responsive">
+                    <table id="barra-electivas" class="table table-striped table-bordered" style="width:100%">
+                        <thead>
+                            <tr>
+                              <th  width="20%"> Electiva</th>
+                              <th>Avance</th>
+                            </tr>
+                          </thead>
+    
+                          <tbody>
+                      
+                          </tbody>
+                     </table>
+          <div class="row" style="display: inline-block;">
+            <div class=" top_tiles" style="margin: 10px 0;">
+
+            </div>
+          </div>
+        
+
+              <!-- aqui va la tabla de abajo -->
+              <h4>Ejemplos de Actividades</h4>
+                    <div class="col-md-12 col-sm-6  ">
+                      <div class="x_panel">
+                        
+                      <div class="x_content">
+
+
+
+                <!-- start accordion -->
+                <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+                  <div class="panel">
+                    <a class="panel-heading bg-success text-white" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <h4 class="panel-title">Inquietudes vocacionales propias</h4>
+                    </a>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body">
+                           <!-- ejemplo 1-->
+                          
+                         <table id="tabla1" class="table table-striped table-bordered" style="width:100%">
+                            <thead>
+                              <tr>
+                                <th id="moda1">Modalidad</th>
+                                <th id="ejem1">Ejemplos de actividades </th>
+                                <th id="cred1">Créditos</th>
+                              </tr>
+                            </thead>
+        
+                            <tbody>
+                           
+                            </tbody>
+                          </table>
+                            <!-- fin ejemplo 1-->
+
+
+                  
+
+                    
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel">
+                    <a class="panel-heading collapsed bg-success text-white" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <h4 class="panel-title">Énfasis en la profesión</h4>
+                    </a>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+
+                                    <!-- ejemplo 2-->
+
+                                    <table id="tabla2" class="table table-striped table-bordered" style="width:100%">
+                                      <thead>
+                                        <tr>
+                                          <th id="moda2">Modalidad</th>
+                                          <th id="ejem2">Ejemplos de actividades </th>
+                                          <th id="cred2">Créditos</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                    
+                                      </tbody>
+                                  </table>
+                                      <!-- fin ejemplo 2-->
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="panel">
+                              <a class="panel-heading collapsed bg-success text-white" role="tab" id="headingThree" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <h4 class="panel-title">Complementarias a la información</h4>
+                              </a>
+                              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                  <div class="panel-body">
+                                           <!-- ejemplo 3-->
+
+                                    <table id="tabla3" class="table table-striped table-bordered" style="width:100%">
+                                        <thead>
+                                          <tr>
+                                            <th id="moda3">Modalidad</th>
+                                            <th id="ejem3">Ejemplos de actividades </th>
+                                            <th id="cred3">Créditos</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                     
+                                        </tbody>
+                                    </table>
+                            <!-- fin ejemplo 3-->
+                          </div>
+                        </div>
+
+
+                         <!-- hasta aqui -->
+                  </div>
+                </div>
+                <!-- end of accordion -->
+
+              </div>
+          </div>
+      </div>
+    </div>
+       
+    
+
+
+   </div>
+   </div>
+</div>
+
+            
+<!-- sgrafica-->
+                   
+
+              <!-- start of weather widget -->
+              <!-- end of weather widget -->
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../plantilla2/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+   <script src="../plantilla2/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="../plantilla2/vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../plantilla2/vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="../plantilla2/vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- jQuery Sparklines -->
+    <script src="../plantilla2/vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+    <!-- morris.js -->
+    <script src="../plantilla2/vendors/raphael/raphael.min.js"></script>
+    <script src="../plantilla2/vendors/morris.js/morris.min.js"></script>
+    <!-- gauge.js -->
+    <script src="../plantilla2/vendors/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="../plantilla2/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- Skycons -->
+    <script src="../plantilla2/vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="../plantilla2/vendors/Flot/jquery.flot.js"></script>
+    <script src="../plantilla2/vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="../plantilla2/vendors/Flot/jquery.flot.time.js"></script>
+    <script src="../plantilla2/vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="../plantilla2/vendors/Flot/jquery.flot.resize.js"></script>
+    <!--Datatables-->
+    <script src="../plantilla2/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../plantilla2/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="../plantilla2/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../plantilla2/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="../plantilla2/vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="../plantilla2/vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="../plantilla2/vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="../plantilla2/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="../plantilla2/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="../plantilla2/vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../plantilla2/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="../plantilla2/vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+    <!-- Flot plugins -->
+    <script src="../plantilla2/vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="../plantilla2/vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="../plantilla2/vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="../plantilla2/vendors/DateJS/build/date.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../plantilla2/vendors/moment/min/moment.min.js"></script>
+    <script src="../plantilla2/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../plantilla2/build/js/custom.min.js"></script>
+
+
+    <!-- Js de denominacion-->
+    <script src="js/denominacion.js"></script>
+
+ <!-- TABLAS  -->
+    <script>
+      $(document).ready(function () {
+          $('#tabla1').DataTable();
+      });
+  </script>
+  
+  <script>
+      $(document).ready(function () {
+          $('#tabla2').DataTable();
+      });
+  </script>
+  
+  <script>
+      $(document).ready(function () {
+          $('#tabla3').DataTable();
+      });
+  </script>
+  
+  
+  <script>
+      $(document).ready(function () {
+          $('#barra-electivas').DataTable();
+      });
+  </script>
+  
+  
+  <script>
+      $( document ).ready(function() {
+      actionRead1();
+      });
+  </script>
+  
+  <script>
+      $( document ).ready(function() {
+      actionRead2();
+      });
+  </script>
+  
+  <script>
+      $( document ).ready(function() {
+      actionRead3();
+      });
+  </script>
+  
+  <!--BARRAS DE PORCENTAJE  -->
+  <script>
+      $( document ).ready(function() {
+      actionReadElectivas();
+      });
+  </script>
+
+
+  </body>
+</html>
