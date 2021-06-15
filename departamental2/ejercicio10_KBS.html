@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Departamental II | Ejercicio10</title>
+
+        <!-- Añadimos el CSS-->
+        <link rel="stylesheet" href="../departamental2/css/style.css">
+
+    </head>
+
+
+        
+    <body>
+
+        <form>
+            <input type="button" value="Azul" class="btn-azul" id="az">
+            <input type="button" value="Verde" class="btn-verde" id="ve">
+            <input type="button" value="Amarillo" class="btn-amarillo" id="am">
+            <input type="button" value="Rojo" class="btn-rojo" id="ro">
+        </form>
+        
+        <div class="div-azul" id="div-az">
+            <p> <b> I am info callout!</b> </p>
+            <p> Follow the steps to continue payment</p>
+        </div>
+
+        <div class="div-verde" id="div-ve">
+            <p> <b>I am succes callout!</b> </p>
+            <p> This is a green callout </p>
+        </div>
+
+        <div class="div-amarillo" id="div-am">
+            <p > <b>I am warning callout!</b> </p>
+            <p> This is a yellow callout </p>
+        </div>
+
+        <div class="div-rojo" id="div-ro">
+            <p> <b>I am danger callout!</b> </p>
+            <p> There is a problem that we need to fix. A wonderful serenity
+                has taken possession of my soul, like these sweet mornings of
+                spring wich I enjoy with my whole heart </p>
+        </div>
+
+
+        <!--Script-->
+        <script  src="js/jquery-3.4.1.min.js"></script>
+
+        <script>
+            $(document).ready(() => {
+                $('#div-az').hide();
+                $('#div-ve').hide();
+                $('#div-am').hide();
+                $('#div-ro').hide();
+            
+                $('#ve').click(function() {
+                $('#div-az').hide();
+                $('#div-ve').show();
+                $('#div-am').hide();
+                $('#div-ro').hide();
+                 });
+
+                $('#ro').click(function() {
+                $('#div-az').hide();
+                $('#div-ve').hide();
+                $('#div-am').hide();
+                $('#div-ro').show();
+                 });
+
+                 $('#am').click(function() {
+                $('#div-az').hide();
+                $('#div-ve').hide();
+                $('#div-am').show();
+                $('#div-ro').hide();
+                 });
+
+
+                $('#az').click(function() {
+                $('#div-az').show();
+                $('#div-ve').hide();
+                $('#div-am').hide();
+                $('#div-ro').hide();
+                });
+            
+            
+            });
+        </script>
+    </body>
+        
+</html>
