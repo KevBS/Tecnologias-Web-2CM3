@@ -1,0 +1,84 @@
+body{
+    background-color:rgb(234,238,243);
+}
+
+.btn-rojo{
+    background-color: red;
+    border-radius: 4px;
+    padding: 7px 20px;
+    cursor: pointer;
+}
+
+.btn-azul{
+    background-color: #2888d6;
+    border-radius: 4px;
+    padding: 7px 20px;
+    cursor: pointer;
+}
+
+.btn-amarillo{
+    background-color: rgb(207, 207, 27);
+    border-radius: 4px;
+    padding: 7px 20px;
+    cursor: pointer;
+}
+
+.btn-verde{
+    background-color: rgb(6, 150, 6);
+    border-radius: 4px;
+    padding: 7px 20px;
+    cursor: pointer;
+}
+
+
+.div-azul{
+    background-color: #33bce6;
+    padding: 5px 10px;
+    min-width: 200px;
+    margin-top: 20px; 
+    left: auto;
+    right: 50px;
+    top: 10px;
+    border-radius: 5px;
+    border-left: 7px solid #2888d6;
+    color: white;
+}
+
+.div-verde{
+    background-color: rgb(28, 179, 28);
+    padding: 5px 10px;
+    min-width: 200px;
+    margin-top: 20px; 
+    left: auto;
+    right: 50px;
+    top: 10px;
+    border-radius: 5px;
+    border-left: 7px solid #06740f;
+    color: white;
+}
+
+.div-amarillo{
+    background-color: rgb(207, 207, 27);
+    padding: 5px 10px;
+    min-width: 200px;
+    margin-top: 20px; 
+    left: auto;
+    right: 50px;
+    top: 10px;
+    border-radius: 5px;
+    border-left: 7px solid #84990f;
+    color: white;
+}
+
+.div-rojo{
+    background-color: rgb(235, 15, 15);
+    padding: 5px 10px;
+    min-width: 200px;
+    margin-top: 20px; 
+    left: auto;
+    right: 50px;
+    top: 10px;
+    border-radius: 5px;
+    border-left: 7px solid #740606;
+    color: white;
+}
